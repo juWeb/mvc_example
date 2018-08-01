@@ -1,18 +1,3 @@
-<?php
-    $file = __DIR__.'/log.log';
-
-    $fileContent = file_get_contents($file);
-    if(!$fileContent) {
-        $counter = 0;
-    } else {
-        $counter = unserialize($fileContent);
-    }
-
-    $counter++;
-
-    file_put_contents($file, serialize($counter));
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
